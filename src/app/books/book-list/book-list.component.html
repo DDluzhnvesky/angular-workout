@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewBook()">New Book</button>
+    <input #myInput class="form-control search" placeholder="Search..." (input)="filterItem(myInput.value)">
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-book-item
+      *ngFor="let bookEl of filteredItems; let i = index"
+      [book]="bookEl"
+      [index]="i"></app-book-item>
+  </div>
+</div>
+

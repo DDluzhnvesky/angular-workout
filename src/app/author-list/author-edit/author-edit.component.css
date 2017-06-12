@@ -1,0 +1,13 @@
+.photo-block img {
+    height: 220px;
+}
+
+.photo-block {
+    text-align: center;
+}
+
+.form-inputs {
+    padding-right: 50px;
+    border-right: solid darkgray;
+    border-width: 2px;
+}

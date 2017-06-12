@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-author-edit></app-author-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let author of authors; let i = index"
+        (click)="onEditItem(i)"
+      >
+        {{ author.firstName }} ({{ author.lastName }})
+      </a>
+    </ul>
+  </div>
+</div>
